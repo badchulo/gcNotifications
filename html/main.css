@@ -1,0 +1,25 @@
+/** General Selectors*/
+body {
+    width: 100%;
+    overflow: hidden;
+    font-family: serif;
+	font-size: 16px;
+	
+}
+#cuerpo {
+width: auto;
+height: auto;
+
+margin-top: -150px;
+margin-left: auto; 
+margin-right: 300px;
+background-color: #339933;
+float: right;
+box-shadow: 3px 3px 3px 3px #003300;
+border-radius: 8px;
+padding: 8px;
+}
+#icono {
+padding-bottom: 10px;
+	
+}
