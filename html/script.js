@@ -11,18 +11,28 @@ var mensajesacado
 timeout()
 function timeout() {
 	mensajesacado = mensaje.shift();
+	
 	if (mensajesacado == null) {
 		setTimeout(function () {
 				 timeout();    
 		}, 100);
 	}
 	else {
-		$('#mensaje').html(mensajesacado);    
+		x = mensajesacado
+		var a = [];
+		var i = 50; // Every 12 characters
+
+		do {
+			a.push(x.substring(0, i));
+		} while((x = x.substring(i, x.length)) != "");
+
+		a = a.join('<br>');
+		$('#mensaje').html(a);    
 		$('#autor').html(" "+contacto.shift());    
 
 		setTimeout(function () {
 		  $( "#cuerpo" ).animate({
-			marginTop: "+=150",
+			marginTop: "+=200",
 		  }, 500, function() {
 
 		
@@ -30,7 +40,7 @@ function timeout() {
 		  });
 		  setTimeout(function () {
 			  $( "#cuerpo" ).animate({
-				marginTop: "-=150",
+				marginTop: "-=200",
 				}, 1000, function() {
 				
 				 timeout();
