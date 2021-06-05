@@ -9,8 +9,6 @@ files {
     'html/ui.html',
     'html/script.js',
     'html/main.css',
-    'html/animate.css',
-    'html/media.css'
 }
 
 shared_scripts {
